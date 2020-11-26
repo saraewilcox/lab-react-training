@@ -8,6 +8,9 @@ import Rating from './component/Rating';
 import DriverCard from './component/DriverCard';
 import LikeButton from './component/LikeButton';
 import ClickablePicture from './component/ClickablePicture';
+import Dice from './component/Dice';
+import Carousel from './component/Carousel';
+import NumbersTable from './component/NumbersTable';
 
 import './App.css';
 
@@ -109,6 +112,22 @@ function App() {
           img='/img/persons/maxence.png'
           imgClicked='/img/persons/maxence-glasses.png'
         />
+
+        <h1>Dice</h1>
+        <Dice />
+
+        <h1>Carousel</h1>
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+
+        <h1>Numbers Table</h1>
+        <NumbersTable limit={12} />
 
       </div>
 
